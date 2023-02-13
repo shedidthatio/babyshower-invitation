@@ -1,0 +1,7 @@
+/* Import fonts */
+@import url('https://fonts.cdnfonts.com/css/aplenty');
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
