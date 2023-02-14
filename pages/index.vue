@@ -1,22 +1,22 @@
 <template>
-    <div class='p-10 md:p-10 w-full h-screen' id='content-wrapper-parent'>
-        <div class='p-7 grid grid-cols-1' id='content-wrapper-child'>
-            <div class='p-3 grid grid-cols-1'>
-                <div class='p-3 grid grid-cols-1 text-center text-xs md:text-sm leading-4 md:leading-6'>
-                    <h2 class='text-3xl md:text-7xl mb-2 leading-none'>join us</h2>
+    <div class='h-screen flex flex-col justify-center items-center' id='content-wrapper-parent'>
+        <div class='p-7' id='content-wrapper-child'>
+            <div class='p-16 grid grid-cols-1 justify-center items-center'>
+                <div class='grid grid-cols-1 text-center text-xs md:text-sm leading-4 md:leading-6'>
+                    <h2 class='text-5xl md:text-7xl mb-2 leading-none'>join us</h2>
                     <p>To celebrate</p>
                     <p>Lyjah and Jairon</p>
                     <p>on their amazing path</p>
                     <p>to parenthood</p>
-                    <h3 class='text-3xl md:text-8xl leading-none mb-2'>Experience
+                    <h3 class='text-5xl md:text-8xl leading-none mb-2'>Experience
                     </h3>
                     <p>The upcoming arrival of</p>
                     <p>their new baby boy</p>
-                    <p class='text-md md:text-xl leading-6 font-bold my-2'>Jaire Jamarr Dorsey</p>
+                    <p class='text-lg leading-6 font-bold my-2'>Jaire Jamarr Dorsey</p>
                     <p class='font-semibold'>February 25<sup>th</sup> at 3pm</p>
                     <p class='mt-2'>Address details will be</p>
                     <p>shared after RSVP is submitted</p>
-                    <p>RSVP by February 18<sup>th</sup></p>
+                    <p class='my-2'>RSVP by February 18<sup>th</sup></p>
                     <nuxt-link :to='`https://amzn.to/3lu1JRu`' target="_blank"
                         class='uppercase font-semibold mt-4 hover:scale-105 ease-linear duration-200'
                         id='registryLink'>Jaire’s baby
@@ -48,7 +48,7 @@
 
 <style scoped>
 #content-wrapper-parent {
-    background-image: url('assets/imgs/bgImage.svg'), linear-gradient(180deg, #010A0D 0%, #2A2E2F 73.13%);
+    background-image: url('assets/imgs/starsbgImage.svg'), linear-gradient(180deg, #010A0D 0%, #2A2E2F 73.13%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,7 +80,7 @@ p {
 }
 
 #rsvpLinkBlock {
-    animation: spin 8s linear infinite;
+    animation: spin 9s linear infinite;
 
     @keyframes spin {
         from {
