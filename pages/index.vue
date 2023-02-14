@@ -48,7 +48,7 @@
 
 <style scoped>
 #content-wrapper-parent {
-    background-image: url('assets/imgs/starsbgImage.svg'), linear-gradient(180deg, #010A0D 0%, #2A2E2F 73.13%);
+    background-image: url('assets/imgs/starsbgImg.svg'), linear-gradient(180deg, #010A0D 0%, #2A2E2F 73.13%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
