@@ -1,9 +1,8 @@
 <template>
-    <div class='py-20 md:py-16' id='content-wrapper-parent'>
-        <div class='p-7 grid grid-cols-1 items-center justify-center' id='content-wrapper-child'>
-            <div class='p-3 grid grid-cols-1 items-center justify-center'>
-                <div
-                    class='p-3 flex flex-col items-center justify-center text-center text-xs md:text-sm leading-4 md:leading-6'>
+    <div class='p-10 md:p-10 w-full h-screen' id='content-wrapper-parent'>
+        <div class='p-7 grid grid-cols-1' id='content-wrapper-child'>
+            <div class='p-3 grid grid-cols-1'>
+                <div class='p-3 grid grid-cols-1 text-center text-xs md:text-sm leading-4 md:leading-6'>
                     <h2 class='text-3xl md:text-7xl mb-2 leading-none'>join us</h2>
                     <p>To celebrate</p>
                     <p>Lyjah and Jairon</p>
@@ -49,15 +48,10 @@
 
 <style scoped>
 #content-wrapper-parent {
-    background-image: url('assets/imgs/starsBgImage.svg'), linear-gradient(180deg, #010A0D 0%, #2A2E2F 73.13%);
+    background-image: url('assets/imgs/bgImage.svg'), linear-gradient(180deg, #010A0D 0%, #2A2E2F 73.13%);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
-    background-position: center center;
-    width: 100vw;
-    min-width: 100%;
-    height: 100vh;
-    min-height: 100%;
 }
 
 #content-wrapper-child {
@@ -66,9 +60,6 @@
     background-size: contain;
     background-attachment: initial;
     background-position: center;
-    width: 300px;
-    min-width: 100%;
-    height: auto;
 }
 
 .rotated {
