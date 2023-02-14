@@ -12,20 +12,20 @@
                     </h3>
                     <p>The upcoming arrival of</p>
                     <p>their new baby boy</p>
-                    <p class='text-lg leading-6 font-bold my-2'>Jaire Jamarr Dorsey</p>
+                    <p class='text-lg font-bold my-2'>Jaire Jamarr Dorsey</p>
                     <p class='font-semibold'>February 25<sup>th</sup> at 3pm</p>
                     <p class='mt-2'>Address details will be</p>
                     <p>shared after RSVP is submitted</p>
-                    <p class='my-2'>RSVP by February 18<sup>th</sup></p>
+                    <p class='mt-2'>RSVP by February 18<sup>th</sup></p>
                     <nuxt-link :to='`https://amzn.to/3lu1JRu`' target="_blank"
-                        class='uppercase font-semibold mt-4 hover:scale-105 ease-linear duration-200'
+                        class='uppercase font-semibold m-2 hover:scale-105 ease-linear duration-200'
                         id='registryLink'>Jaire’s baby
                         registry 👶🏾</nuxt-link>
                 </div>
             </div>
         </div>
 
-        <div class='fixed top-16 left-8'>
+        <div class='fixed top-12 left-8'>
             <h1 class='rotated text-white rounded-tl-3xl rounded-br-3xl pr-6 p-3 md:p-4 text-3xl md:text-4xl border-4'>
                 You're
                 invited!
@@ -80,7 +80,7 @@ p {
 }
 
 #rsvpLinkBlock {
-    animation: spin 9s linear infinite;
+    animation: spin 12s linear infinite;
 
     @keyframes spin {
         from {
