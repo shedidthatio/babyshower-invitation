@@ -1,22 +1,24 @@
 <template>
-    <div class='relative h-screen flex flex-col justify-center items-center' id='content-wrapper-parent'>
-        <div class='p-7 flex flex-col items-center justify-center' id='content-wrapper-child'>
-            <div class='p-3 flex flex-col items-center justify-center'>
-                <div class='p-3 flex flex-col items-center justify-center text-center text-sm leading-6'>
-                    <h1 class='text-5xl md:text-7xl mb-2 leading-none'>join us</h1>
+    <div class='py-20 md:py-16' id='content-wrapper-parent'>
+        <div class='p-7 grid grid-cols-1 items-center justify-center' id='content-wrapper-child'>
+            <div class='p-3 grid grid-cols-1 items-center justify-center'>
+                <div
+                    class='p-3 flex flex-col items-center justify-center text-center text-xs md:text-sm leading-4 md:leading-6'>
+                    <h2 class='text-3xl md:text-7xl mb-2 leading-none'>join us</h2>
                     <p>To celebrate</p>
                     <p>Lyjah and Jairon</p>
                     <p>on their amazing path</p>
                     <p>to parenthood</p>
-                    <h2 class='text-6xl md:text-8xl leading-none mb-2'>Experience</h2>
+                    <h3 class='text-3xl md:text-8xl leading-none mb-2'>Experience
+                    </h3>
                     <p>The upcoming arrival of</p>
                     <p>their new baby boy</p>
-                    <p class='text-xl leading-8 font-bold mt-2'>Jaire Jamarr Dorsey</p>
+                    <p class='text-md md:text-xl leading-6 font-bold my-2'>Jaire Jamarr Dorsey</p>
                     <p class='font-semibold'>February 25<sup>th</sup> at 3pm</p>
                     <p class='mt-2'>Address details will be</p>
                     <p>shared after RSVP is submitted</p>
                     <p>RSVP by February 18<sup>th</sup></p>
-                    <nuxt-link :to='`https://amzn.to/3lu1JRu`'
+                    <nuxt-link :to='`https://amzn.to/3lu1JRu`' target="_blank"
                         class='uppercase font-semibold mt-4 hover:scale-105 ease-linear duration-200'
                         id='registryLink'>Jaire’s baby
                         registry 👶🏾</nuxt-link>
@@ -31,8 +33,9 @@
             </h1>
         </div>
         <div class='fixed bottom-0 right-0'>
-            <nuxt-link :to='`http://bit.ly/3S2ldJq`' class='flex flex-col items-center m-4' id='rsvpLinkBlock'>
-                <img class='w-28 md:w-40 rounded-full p-3 md:p-6 border-4' id='rsvpImg' src='~assets/imgs/Union.svg'
+            <nuxt-link :to='`http://bit.ly/3S2ldJq`' target="_blank" class='flex flex-col items-center m-4'
+                id='rsvpLinkBlock'>
+                <img class='w-28 md:w-40 rounded-full p-3 md:p-6 border-4' id='rsvpImg' src='~assets/imgs/rsvpImage.svg'
                     alt="Image of a planet with RSVP HERE text surrounding it." />
             </nuxt-link>
         </div>
@@ -46,11 +49,15 @@
 
 <style scoped>
 #content-wrapper-parent {
-    background-image: url('assets/imgs/starsBg800w.svg'), linear-gradient(180deg, #010A0D 0%, #2A2E2F 73.13%);
+    background-image: url('assets/imgs/starsBgImage.svg'), linear-gradient(180deg, #010A0D 0%, #2A2E2F 73.13%);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: initial;
-    background-position: 50% 50%;
+    background-attachment: scroll;
+    background-position: center center;
+    width: 100vw;
+    min-width: 100%;
+    height: 100vh;
+    min-height: 100%;
 }
 
 #content-wrapper-child {
@@ -68,25 +75,11 @@
     border-color: #FFE4AF;
     background-color: #010A0D;
     transform: rotate(-18deg);
-    /* animation: bounce 3s infinite; */
-
-    /* @keyframes bounce {
-
-        0%,
-        100% {
-            transform: scale(1.1) translateY(50px) rotate(-18deg);
-            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        50% {
-            transform: scale(1) translateY(50px) rotate(-18deg);
-            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    } */
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Aplenty';
 }
 
